@@ -11,8 +11,8 @@ public class PlayerMove : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (Input.mousePosition);
+		// Debug.Log (Input.mousePosition);
 		Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		transform.position = new Vector3(mousePosition.x, Mathf.Clamp(mousePosition.y, -3.8f, 3.8f), transform.position.z);
+		transform.position = new Vector3(-7f, Mathf.Clamp(mousePosition.y, -3.8f, 3.8f), transform.position.z);
 	}
 }
